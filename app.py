@@ -1,5 +1,4 @@
-from flask import Flask, redirect, url_for, render_template, request, session, flash
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, redirect, url_for, render_template, request, session
 from flask_socketio import SocketIO
 import datetime
 
@@ -13,8 +12,20 @@ db = SQLAlchemy(app)
 
 @app.route("/register", methods=["POST", "GET"])
 def register_name():
-    render_template()
+    if request.method == "POST":
+        session["name"] = request.form["name"]
+        return redirect(url_for("chatroom"))
+    else:
+        return render_template("register.html")
 
+
+app.route("/chatroom", mathods=["POST", "GET"])
+def chatroom():
+    if request.method == "POST":
+        pass
+    
+    if request.method == "GET":
+        return render_template("chatroom.html")
 
 @socketio.on('my event')
 def handle_my_custom_event(json):
