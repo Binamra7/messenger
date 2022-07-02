@@ -11,7 +11,7 @@
 #message {
     display:flex;
     height:80vh;
-    width:500px;
+    width:400px;
     background-color:  #242526;
     border-radius: 1rem;
 }
@@ -22,7 +22,7 @@ input,button {
 }
 form {
     display: flex;
-    width:500px;
+    width:400px;
     justify-content: space-around;
 }
 input {
@@ -34,7 +34,7 @@ button {
     width:40%;
     border-radius: 10px;
     border: 1px solid #242526;
-    background-color: #242526;
+    background-color: rgb(0, 132, 255);
     color: #fff;
 }
 button:hover {
