@@ -1,0 +1,48 @@
+* {
+    margin:0;
+    padding:0;
+}
+#container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+#message {
+    display:flex;
+    height:80vh;
+    width:500px;
+    background-color:  #242526;
+    border-radius: 1rem;
+}
+input,button {
+    margin-top: 1rem;
+    height:3rem;
+    /* padding:1rem; */
+}
+form {
+    display: flex;
+    width:500px;
+    justify-content: space-around;
+}
+input {
+    width:70%;
+    border-radius: 10px;
+    border: 1px solid #242526;
+}
+button {
+    width:40%;
+    border-radius: 10px;
+    border: 1px solid #242526;
+    background-color: #242526;
+    color: #fff;
+}
+button:hover {
+    cursor:pointer;
+    box-shadow: 2px 2px 2px #686a6b;
+}
+/* your message color */
+/* background-color: rgb(0, 132, 255); */
+
+/* other person message colgro
+background-color:#3e4042 */
